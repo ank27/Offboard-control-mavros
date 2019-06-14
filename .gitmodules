@@ -1,0 +1,15 @@
+
+[submodule "src/mavros"]
+        path = src/mavros
+        url = https://github.com/mavlink/mavros.git
+        branch = master
+[submodule "src/mavlink"]
+        path = src/mavlink
+        url = https://github.com/mavlink/mavlink-gbp-release.git
+        branch = debian/ros-kinetic-mavlink_2019.4.4-0_xenial
+[submodule "src/Firmware"]
+        path = src/Firmware
+        url = https://github.com/PX4/Firmware.git
+        branch = origin/v1.9.0-beta3
+
+

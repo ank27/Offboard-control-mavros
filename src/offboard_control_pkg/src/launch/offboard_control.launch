@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Launch PX4 and mavros -->
+    <include file="$(find offboard_control_pkg)/src/launch/offboard_control_sitl.launch" >
+        <arg name="model" value="iris" />
+    </include>
+
+    <!-- Launch node --> 
+    <node name="offboard_ros_node" pkg="offboard_control_pkg" type="offboard_control_ros.py" output="screen" />
+
+    <!-- <node name="mission_control" pkg="offboard_control_pkg" type="mission_control_ros.py" output="screen" /> -->
+</launch>
